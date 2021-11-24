@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="stylesheet.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Terningspill</title>
+</head>
+<body>
+<div class="banner">
+    <div class="banner-text">
+        <h1>Terning Spill</h1>
+        <p>Kjempe gøy!</p>
+    </div>
+</div>
+
+<div class="topnav">
+    <a class="active" href="index.html">Hjem</a>
+    <a href="vær.html">Værmelding</a>
+    <a href="terning.html">Terning spill!</a>
+    <a href="kode.html">Ternings kode</a>
+</div>
+
+<div class="hmini">
+    <h1>Terningspillet!</h1>
+</div>
+
+<div id="roll-dice">
+    <button onClick="window.location.reload();">Roll dice</button>
+    <span id="roll-result"></span>
+</div>
+
+<script>
+    var rollResult = Math.floor(Math.random() * 6) + 1;
+if (rollResult === 1) document.write('<img src="terning1.svg">');
+else if (rollResult === 2) document.write('<img src="terning2.svg">');
+else if (rollResult === 3) document.write('<img src="terning3.svg">');
+else if (rollResult === 4) document.write('<img src="terning4.svg">');
+else if (rollResult === 5) document.write('<img src="terning5.svg">');
+else  document.write('<img src="terning6.svg">');
+//Denne koden ruller et tilfeldig tall fra 1 til 6 og refresher bildet vedlagt til nummeret i if løkken.
+</script>
+
+
+
+
+
+</body>
+</html>
